@@ -1,12 +1,22 @@
 import React from 'react';
-import './App.css';
+import Header from '../Header/Header';
+import Navbar from '../Navbar/Navbar';
 
-function App() {
-  return (
-    <main className="App">
-      
-    </main>
-  );
+class App extends React.Component {
+  
+  state = {
+    input: ''
+  }
+
+
+  render() {
+    return (
+      <main className="App">
+        {/* <Header /> */}
+        <Navbar />
+      </main>
+    );
+  }
 }
 
 export default App;
